@@ -1,11 +1,11 @@
 import App from "./app"
-import { Bootstrapper } from "./bootstrapper";
+import { DIBootstrapper } from "./diBootstrapper";
 import { Router } from "express";
-const bootstrapper = new Bootstrapper();
+const diBootstrapper = new DIBootstrapper();
 
 const router = Router();
 
-bootstrapper.registerControllers(router);
+diBootstrapper.registerControllers(router);
 
 const app = new App(
     router,

@@ -13,8 +13,6 @@ export class TestController implements Controller {
         this.initializeRoutes();
     }
 
-
-
     private initializeRoutes(): void {
         this.router.get(this.route, this.testRoute);
     }
