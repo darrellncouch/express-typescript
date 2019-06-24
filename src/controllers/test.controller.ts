@@ -19,7 +19,7 @@ export class TestController implements Controller {
 
     public testRoute = async (req: Request, res: Response) => {
         
-        const result = await this.authManager.getSumthin(req.body as Array<any>);
+        const result = await this.authManager.getSumthin([1]);
 
         res.send(result);
     }

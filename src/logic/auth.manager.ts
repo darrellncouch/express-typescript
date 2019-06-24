@@ -1,5 +1,6 @@
 import { AuthRepository } from "../data/auth.repository";
 import { Result } from "../types/Result";
+import { Role } from "../types/enteties/Role";
 
 
 export class AuthManager {
@@ -9,10 +10,10 @@ export class AuthManager {
     }
 
 
-    public async getSumthin(ids: Array<any>): Promise<Result<Array<any>>>{
+    public async getSumthin(ids: Array<any>): Promise<Result<Array<Role>>>{
 
         if(ids == null || ids.length == 0)
-            return Result.fail<Array<any>>('Missing Ids');
+            return Result.fail<Array<Role>>('Missing Ids');
 
         return await this.authRepo.getSumthin(ids);
 

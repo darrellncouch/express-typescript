@@ -1,6 +1,7 @@
 import App from "./app"
 import { DIBootstrapper } from "./diBootstrapper";
 import { Router } from "express";
+import { Role } from "./types/enteties/Role";
 const diBootstrapper = new DIBootstrapper();
 
 const router = Router();
