@@ -3,9 +3,9 @@ import { createConnection, Connection } from "typeorm";
 import { Role } from "../types/enteties/Role";
 import { Connections } from "./connection";
 
-export class AuthRepository {
+export default class AuthRepository {
     
-    private readonly db = new Connections();
+    public db = new Connections();
 
     constructor() {
     }
@@ -13,7 +13,7 @@ export class AuthRepository {
 
     
 
-    public async getSumthin(ids: Array<any>) : Promise<Result<Array<Role>>>{
+    public async getRolesByIds(ids: Array<any>) : Promise<Result<Array<Role>>>{
         
         try{
 
