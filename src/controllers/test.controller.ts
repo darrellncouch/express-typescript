@@ -1,9 +1,9 @@
 import Controller from "../types/baseClasses/controller";
 import path from "path";
 import { Router, Request, Response } from "express";
-import { AuthManager } from "../logic/auth.manager";
+import AuthManager from "../logic/auth.manager";
 
-export class TestController implements Controller {
+export default class TestController implements Controller {
     public route = "/api";
 
     constructor(
@@ -19,7 +19,9 @@ export class TestController implements Controller {
 
     public testRoute = async (req: Request, res: Response) => {
         
-        const result = await this.authManager.getSumthin([1]);
+        //auth check here 
+        
+        const result = await this.authManager.getSomething([1]);
 
         res.send(result);
     }
