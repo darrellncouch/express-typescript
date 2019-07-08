@@ -13,6 +13,7 @@ export default class AuthRepository {
 
     
 
+
     public async getRolesByIds(ids: Array<any>) : Promise<Result<Array<Role>>>{
         
         try{

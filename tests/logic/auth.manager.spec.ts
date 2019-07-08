@@ -31,6 +31,7 @@ describe("getSomething should return Result.fail if no params/empty array is pas
     const failure = Result.fail<Array<Role>>("Missing Ids");
 
 
+
     expect(authManager.getRolesByIds(null)).to.equal(failure);
     expect(authManager.getRolesByIds([])).to.equal(failure);
     

@@ -10,6 +10,7 @@ export default class AuthManager {
     }
 
 
+
     public async getRolesByIds(ids: Array<any>): Promise<Result<Array<Role>>>{
 
         if(ids == null || ids.length == 0)
