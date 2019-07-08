@@ -1,8 +1,9 @@
-# Ignore file named 'package-lock.json'
+
+#Ignore file named "package-lock"
 package-lock.json
 
-# Ignore folder named 'node_modules'
+#Ignore folder named "node_modules"
 node_modules/
 
-#Ignore folder named 'dist'
+#Ignore folder named "dist"
 dist/

@@ -19,9 +19,10 @@ export default class TestController implements Controller {
 
     public testRoute = async (req: Request, res: Response) => {
         
+
         //auth check here 
         
-        const result = await this.authManager.getSomething([1]);
+        const result = await this.authManager.getSomething([1])
 
         res.send(result);
     }

@@ -5,7 +5,7 @@ import { Connections } from "./connection";
 
 export default class AuthRepository {
     
-    private readonly db = new Connections();
+    public db = new Connections();
 
     constructor() {
     }
@@ -13,7 +13,8 @@ export default class AuthRepository {
 
     
 
-    public async getSomething(ids: Array<any>) : Promise<Result<Array<Role>>>{
+
+    public async getRolesByIds(ids: Array<any>) : Promise<Result<Array<Role>>>{
         
         try{
 
